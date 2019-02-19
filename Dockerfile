@@ -22,7 +22,7 @@ ENV PATH="/opt/node-v10.15.1-linux-x64/bin:${PATH}"
 RUN pip3 install pipenv
 
 # Install poetry
-curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python3
+RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python3
 
 # Install serverless
 RUN npm i -g serverless
