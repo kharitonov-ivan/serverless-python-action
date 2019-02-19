@@ -16,7 +16,7 @@ RUN apt update && apt install -y curl xz-utils && rm -rf /var/lib/apt/lists/*
 
 # Install node
 RUN curl https://nodejs.org/dist/v10.15.1/node-v10.15.1-linux-x64.tar.xz | tar xJ -C /opt
-RUN ln -s /opt/node-v10.15.1-linux-x64/bin/* /usr/bin/.
+ENV PATH="/opt/node-v10.15.1-linux-x64/bin:${PATH}"
 
 # Install pipenv
 RUN pip3 install pipenv
