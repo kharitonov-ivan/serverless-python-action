@@ -26,9 +26,9 @@ action "npm install" {
 
 action "serverless deploy" {
   uses = "dschep/serverless-python-action@master"
-  args = "deploy"
   needs = ["npm install"]
   secrets = ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY"]
+  args = "deploy"
 }
 ```
 
