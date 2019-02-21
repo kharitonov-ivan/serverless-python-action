@@ -1,7 +1,9 @@
 # GitHub Action for Serverless with Python
 
-This Action wraps the [Serverless Framework](https://serverless.com), pip, pipenv,
-and poetry to enable common Serverless commands in python projects.
+This Action wraps the [Serverless Framework](https://serverless.com),
+[pip](https://pip.pypa.io/), [pipenv](https://pipenv.readthedocs.io/),
+and [poetry](https://poetry.eustace.io/) to enable common Serverless
+commands in python projects.
 
 ## Usage
 An example workflow to deploy a python project with serverless:
