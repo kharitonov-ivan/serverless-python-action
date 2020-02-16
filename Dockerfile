@@ -1,5 +1,5 @@
 # base python image bc installing a specific version of node is easier than python
-FROM python:3.7-slim
+FROM python:3.6-slim
 
 LABEL version="1.0.0"
 LABEL repository="https://github.com/dschep/serverless-python-action"
